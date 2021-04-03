@@ -12,6 +12,7 @@
   Plug 'vim-airline/vim-airline'            " statusline
   Plug 'vim-airline/vim-airline-themes'     " statusline themes
   Plug 'roman/golden-ratio'                 " auto resize windows
+  Plug 'mcchrish/nnn.vim'                   " nnn plugin, open with :Np
   call plug#end()
 
 " vim-airline settings:
@@ -27,5 +28,9 @@
   " Automatically populate g:airline_symbols dictionary with powerline
   " symbols (not sure if this does anything)
   let g:airline_powerline_fonts = 1
+
+" nnn.vim settings:
+  " Floating window
+  let g:nnn#layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Debug', 'border': 'sharp' } }
 
 source ~/.vimrc
