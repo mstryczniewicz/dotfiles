@@ -20,7 +20,8 @@
   set noshowmode
 
   " Theme
-  let g:airline_theme='powerlineish'
+  "let g:airline_theme='powerlineish'
+  let g:airline_theme='night_owl'
 
   " Automatically display all buffers when there is only one tab open
   let g:airline#extensions#tabline#enabled = 1
