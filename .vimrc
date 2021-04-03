@@ -33,4 +33,7 @@ set backspace=indent,eol,start  " Backspace behaviour
 "" set rtp+=/usr/lib/python3.8/site-packages/powerline/bindings/vim/
 
 set laststatus=2    " Always show statusline
-set termguicolors   " Enables 24-bit RGB color
+
+if (has("termguicolors"))
+  set termguicolors   " Enables 24-bit RGB color
+endif
