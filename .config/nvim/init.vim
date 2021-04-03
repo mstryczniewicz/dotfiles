@@ -16,6 +16,9 @@
   call plug#end()
 
 " vim-airline settings:
+  " With vim-airline the mode info is no longer necessary:
+  set noshowmode
+
   " Theme
   let g:airline_theme='powerlineish'
 
