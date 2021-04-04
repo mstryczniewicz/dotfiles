@@ -13,6 +13,9 @@ set hlsearch          " Highlight all search results
 set ignorecase        " Search is case-insensitive...
 set smartcase         " ...unless at least one upper-case char is typed
 
+" set gdefault          " Substitutions are automatically global
+" set shortmess         " Avoid hit-enter propmts and some other messages
+
 set autoindent        " Auto-indent new lines
 set shiftwidth=2      " Number of auto-indent spaces
 set smartindent       " Enable smart-indent
