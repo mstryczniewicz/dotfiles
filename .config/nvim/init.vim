@@ -13,6 +13,7 @@
   Plug 'vim-airline/vim-airline-themes'     " statusline themes
   Plug 'roman/golden-ratio'                 " auto resize windows
   Plug 'mcchrish/nnn.vim'                   " nnn plugin, open with :Np
+  Plug 'haishanh/night-owl.vim'             " night-owl color theme
   call plug#end()
 
 " vim-airline settings:
@@ -36,5 +37,9 @@
 " nnn.vim settings:
   " Floating window
   let g:nnn#layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Debug', 'border': 'sharp' } }
+
+" night-owl.vim enable theme:
+  syntax enable
+  colorscheme night-owl
 
 source ~/.vimrc
