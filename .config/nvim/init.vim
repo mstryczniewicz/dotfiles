@@ -14,6 +14,7 @@
   Plug 'roman/golden-ratio'                 " auto resize windows
   Plug 'mcchrish/nnn.vim'                   " nnn plugin, open with :Np
   Plug 'haishanh/night-owl.vim'             " night-owl color theme
+  Plug 'vim-scripts/ReplaceWithRegister'    " replace text with contents of register
   call plug#end()
 
 " vim-airline settings:
