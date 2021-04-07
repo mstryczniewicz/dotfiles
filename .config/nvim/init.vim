@@ -8,6 +8,7 @@
 
   call plug#begin(stdpath('data') . '/plugged')
   Plug 'tpope/vim-sensible'                 " sensible defaults
+  Plug 'tpope/vim-surround'                 " improved quoting/parenthesizing
   Plug 'tpope/vim-fugitive'                 " plugin for git integration
   Plug 'vim-airline/vim-airline'            " statusline
   Plug 'vim-airline/vim-airline-themes'     " statusline themes
