@@ -126,7 +126,6 @@ export EDITOR='nvim'
 # Aliases
 alias rm='safe-rm'
 alias vi='nvim'
-alias mvnagq='mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4'
 alias k='kubectl'
 alias mk='minikube'
 alias shutdown='minikube stop && shutdown'
