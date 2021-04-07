@@ -143,5 +143,5 @@ VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=false
 VI_MODE_SET_CURSOR=true
 
 # THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/marcin/.sdkman"
-[[ -s "/home/marcin/.sdkman/bin/sdkman-init.sh" ]] && source "/home/marcin/.sdkman/bin/sdkman-init.sh"
+# export SDKMAN_DIR="/home/marcin/.sdkman"
+# [[ -s "/home/marcin/.sdkman/bin/sdkman-init.sh" ]] && source "/home/marcin/.sdkman/bin/sdkman-init.sh"
