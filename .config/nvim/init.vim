@@ -27,6 +27,29 @@ set undolevels=1000             " Number of undo levels
 set backspace=indent,eol,start  " Backspace behaviour
 set laststatus=2      " Always show statusline
 
+" Splits
+set splitbelow        " Open a horizontal split below the current one
+set splitright        " Open a verticat split to the right of the current one
+
+" Remap splits navigation to CTRL + hjkl
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Map split resizing to CTRL + arrows
+noremap <silent> <C-Left> :vertical resize +3<CR>
+noremap <silent> <C-Right> :vertical resize -3<CR>
+noremap <silent> <C-Up> :resize +3<CR>
+noremap <silent> <C-Down> :resize -3<CR>
+
+" Change splits from horizontal to vertical and vice versa
+map <Leader>th <C-w>t<C-w>H
+map <Leader>tk <C-w>t<C-w>K
+
+" Remove pipes that act as separators between vertical splits
+" set fillchars+=vert:\
+
 if !exists("g:syntax_on")
   syntax enable       " Enable syntax highlighting if not already on
 endif
