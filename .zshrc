@@ -123,13 +123,10 @@ export EDITOR='nvim'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Aliases
-alias rm='safe-rm'
-alias vi='nvim'
-alias k='kubectl'
-alias mk='minikube'
-alias shutdown='minikube stop && shutdown'
-alias reboot='minikube stop && reboot'
+# Load aliases
+if [ -f ~/.zsh_aliases ]; then
+    . ~/.zsh_aliases
+fi
 
 # Enable vim key bindings (commented-out, bindings are instead provided by the vi-mode plugin)
 # bindkey -v

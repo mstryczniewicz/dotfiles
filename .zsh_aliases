@@ -1,0 +1,8 @@
+alias rm='safe-rm'
+alias vi='nvim'
+alias k='kubectl'
+alias kx='kubectx'
+alias kns='kubens'
+alias mk='minikube'
+alias shutdown='minikube stop && shutdown'
+alias reboot='minikube stop && reboot'
