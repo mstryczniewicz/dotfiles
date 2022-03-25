@@ -61,6 +61,12 @@ endif
 " set gdefault          " Substitutions are automatically global
 " set shortmess         " Avoid hit-enter prompts and some other messages
 
+" Associate Jenkinsfiles with Groovy syntax highlighter
+augroup set_jenkins_groovy
+  au!
+  au BufNewFile,BufRead *.jenkinsfile,Jenkinsfile setf groovy
+augroup END
+
 " junegunn/vim-plug plugin manager section
   " :PlugInstall    install plugins
   " :PlugUpdate     install or update plugins
