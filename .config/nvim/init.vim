@@ -80,11 +80,17 @@ augroup END
   Plug 'tpope/vim-surround'                 " improved quoting/parenthesizing
   Plug 'tpope/vim-fugitive'                 " git integration
   Plug 'vim-scripts/ReplaceWithRegister'    " replace text with contents of register
-  Plug 'roman/golden-ratio'                 " auto resize windows
+  Plug 'roman/golden-ratio'                 " auto resize splits
   Plug 'mcchrish/nnn.vim'                   " nnn plugin, open with :NnnPicker or <leader>n
+  Plug 'romainl/vim-cool'                   " disable search highlighting when done searching
   Plug 'vim-airline/vim-airline'            " statusline
   Plug 'vim-airline/vim-airline-themes'     " statusline themes
   Plug 'haishanh/night-owl.vim'             " night-owl color theme
+  " if has('python3') && has('timers')
+  "   Plug 'danth/pathfinder.vim'             " suggest better motions
+  " else
+  "   echoerr 'pathfinder.vim is not supported on this Vim installation'
+  " endif
   call plug#end()
 
 " vim-airline settings:
