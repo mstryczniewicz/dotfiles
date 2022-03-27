@@ -81,7 +81,7 @@ augroup END
   Plug 'tpope/vim-fugitive'                 " git integration
   Plug 'vim-scripts/ReplaceWithRegister'    " replace text with contents of register
   Plug 'roman/golden-ratio'                 " auto resize windows
-  Plug 'mcchrish/nnn.vim'                   " nnn plugin, open with :Np
+  Plug 'mcchrish/nnn.vim'                   " nnn plugin, open with :NnnPicker or <leader>n
   Plug 'vim-airline/vim-airline'            " statusline
   Plug 'vim-airline/vim-airline-themes'     " statusline themes
   Plug 'haishanh/night-owl.vim'             " night-owl color theme
