@@ -111,7 +111,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: "MesloLGS NF"
+    family: "JetBrainsMono Nerd Font"
 
     # The `style` can be specified to pick a specific face.
     #style: Regular
@@ -150,7 +150,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 10.0
+  size: 11.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -1234,11 +1234,30 @@ schemes:
       foreground: '#d6deeb'
 
     cursor:
-      text: '#011627'
-      cursor: '#d6deeb'
+      text: CellBackground      # '#011627'
+      cursor: CellForeground    # '#d6deeb'
+
+    vi_mode_cursor:
+        text: CellBackground    # '#011627'
+        cursor: '#22da6e'
 
     selection:
+      text: '#ffffff'
       background: '#1b90dd'
+
+    # Search colors
+    search:
+      matches:
+        foreground: "#000000"
+        background: "#22da6e"
+
+        focused_match:
+          foreground: "#ffffff"
+          background: "#22da6e"
+
+      bar:
+        foreground: "#ffffff"
+        background: "#1d3b53"
 
     # Normal colors
     normal:
