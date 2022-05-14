@@ -16,8 +16,23 @@ fi
 #  echo "no sudo"
 #fi
 
+#do a full system upgrade
+pacman -Syyu --noconfirm
+
 # install required software (will config files be created? need to remove before
 # creating symlinks, or install software after)
+pacman -S --noconfirm --needed base base-devel man-db git bspwm sxhkd picom arandr nitrogen rofi polybar zsh kitty neovim mpv keepassxc thunderbird go
+# install picom-git with yay instead of picom from community repo?
+
+# install yay
+YAY_DIR = $HOME/github/yay
+if [[ ! -d "$YAY_DIR" ]]
+then
+  git clone https://aur.archlinux.org/yay.git $YAY_DIR
+  cd $YAY_DIR
+  makepkg -si --noconfirm --needed
+  cd -
+fi
 
 # create symlinks to config files
 ln -s -t $HOME/.config $DOTFILES_DIR/.config/*
