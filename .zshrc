@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/marcin/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -142,6 +142,3 @@ VI_MODE_SET_CURSOR=true
 KUBE_COMPLETION=~/.kube/completion.zsh.inc
 [[ ! -f "$KUBE_COMPLETION" ]] || source "$KUBE_COMPLETION"
 
-# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-# export SDKMAN_DIR="/home/marcin/.sdkman"
-# [[ -s "/home/marcin/.sdkman/bin/sdkman-init.sh" ]] && source "/home/marcin/.sdkman/bin/sdkman-init.sh"
