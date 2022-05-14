@@ -17,11 +17,11 @@ fi
 #fi
 
 #do a full system upgrade
-pacman -Syyu --noconfirm
+sudo pacman -Syyu --noconfirm
 
 # install required software (will config files be created? need to remove before
 # creating symlinks, or install software after)
-pacman -S --noconfirm --needed base base-devel wget man-db git bspwm sxhkd picom arandr nitrogen rofi polybar zsh kitty neovim mpv keepassxc thunderbird go
+sudo pacman -S --noconfirm --needed base base-devel wget man-db git bspwm sxhkd picom arandr nitrogen rofi polybar zsh kitty neovim mpv keepassxc thunderbird go
 # install picom-git with yay instead of picom from community repo?
 
 # install yay
