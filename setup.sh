@@ -84,3 +84,15 @@ fi
 #chsh --shell /bin/zsh $USER
 
 # install fonts
+
+# install ly
+LY_DIR=$HOME/github/ly
+if [[ ! -d $LY_DIR ]]
+then
+  git clone --recurse-submodules https://github.com/nullgemm/ly.git $LY_DIR
+  cd $LY_DIR
+  make
+  sudo make install
+  sudo systemctl enable ly.service
+  cd -
+fi
