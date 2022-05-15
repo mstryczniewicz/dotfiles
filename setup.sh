@@ -16,6 +16,17 @@ fi
 #  echo "no sudo"
 #fi
 
+# enclose commands that need to be run without sudo in a function
+# func(){
+#     echo "Username: $USER"
+#     echo "    EUID: $EUID"
+# }
+# 
+# export -f func
+# 
+# func
+# su "$SUDO_USER" -c 'func'
+
 #do a full system upgrade
 sudo pacman -Syyu --noconfirm
 
