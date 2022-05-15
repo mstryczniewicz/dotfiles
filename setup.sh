@@ -54,7 +54,8 @@ ln -s -t $HOME $DOTFILES_DIR/.zshrc
 ln -s -t $HOME $DOTFILES_DIR/.zsh_aliases
 ln -s -t $HOME $DOTFILES_DIR/.p10k.zsh
 
-if [[ ! -d "$HOME/.oh-my-zsh" ]]
+OMZ_DIR=${ZSH:-$HOME/.oh-my-zsh}
+if [[ ! -d "$OMZ_DIR" ]]
 then
   wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
   sh install.sh --unattended --keep-zshrc
@@ -63,7 +64,7 @@ then
   # sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
 fi
 
-OMZ_CUSTOM_DIR=${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}
+OMZ_CUSTOM_DIR=${ZSH_CUSTOM:-$OMZ_DIR/custom}
 
 if [[ ! -d "$OMZ_CUSTOM_DIR/plugins/zsh-syntax-highlighting" ]]
 then
