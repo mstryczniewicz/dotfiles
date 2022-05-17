@@ -36,6 +36,9 @@ sudo pacman -Syyu --noconfirm
 # creating symlinks, or install software after)
 sudo pacman -S --noconfirm --needed base base-devel linux linux-firmware linux-headers grub man-db xorg xf86-video-amdgpu pulseaudio pavucontrol networkmanager network-manager-applet wireless_tools wpa_supplicant os-prober mtools dosfstools dialog xdg-user-dirs wget git bspwm sxhkd picom arandr nitrogen rofi polybar zsh kitty neovim mpv keepassxc thunderbird go
 # install picom-git with yay instead of picom from community repo?
+# install pipewire instead of pulseaudio?
+# enable networkmanager?
+# sudo systemctl enable NetworkManager
 
 # install yay
 YAY_DIR=$HOME/github/yay
