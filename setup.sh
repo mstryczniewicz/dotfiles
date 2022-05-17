@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# bash best practices
+# https://kvz.io/bash-best-practices.html
 DOTFILES_DIR=$(pwd)
 SCRIPT_NAME=$(basename "$0")
 
