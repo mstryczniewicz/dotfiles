@@ -81,7 +81,7 @@ fi
 
 # create symlinks to config files
 mkdir --parents "$HOME/.config"
-ln --symbolic --target-directory="$HOME/.config" "${__dir}/.config/*" || true
+ln --symbolic --target-directory="$HOME/.config" "${__dir}"/.config/* || true
 
 # install and setup zsh
 ln --symbolic --target-directory="$HOME" "${__dir}/.zshrc" || true
