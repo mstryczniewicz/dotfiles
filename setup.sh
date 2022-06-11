@@ -115,7 +115,7 @@ then
   git clone --depth=1 "https://github.com/romkatv/powerlevel10k.git" "${__omz_custom_dir}/themes/powerlevel10k"
 fi
 
-# check if $SHELL is set as zsh before changing it
+# check if $SHELL is set as zsh before changing it (unnecessary?)
 #chsh --shell /bin/zsh $USER
 
 # install fonts
@@ -131,4 +131,6 @@ then
   sudo systemctl enable ly.service
   cd -
 fi
+
+# copy bspwm and sxhkd template config files to .config
 
