@@ -98,7 +98,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -142,3 +142,5 @@ VI_MODE_SET_CURSOR=true
 KUBE_COMPLETION=~/.kube/completion.zsh.inc
 [[ ! -f "$KUBE_COMPLETION" ]] || source "$KUBE_COMPLETION"
 
+# set XDG vars (read the spec first)
+# XDG_CONFIG_HOME = $HOME/.config
